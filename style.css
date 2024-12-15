@@ -1,0 +1,244 @@
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: #48a30012;
+  font-family: "Poppins", serif;
+}
+
+.sun-icon{
+  animation: rotation 1s infinite linear
+}
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+      transform: rotate(360deg); /* End at 360 degrees */
+  }
+}
+
+.sun-face{
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: -38px;
+
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 64px;
+  color: #48a300;
+}
+.title span {
+  color: #61481c;
+}
+main {
+  margin: 20px;
+}
+.goals-container {
+  background-color: #fbfbfb;
+  max-width: 660px;
+  margin-inline: auto;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.sub-title {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.sub-title img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.goals-container p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  color: #858585;
+}
+
+.custom-progress {
+  background-color: #48a3001a;
+  height: 30px;
+  width: 100%;
+  border-radius: 15px;
+
+}
+.progress-value {
+  background-color: #48a300;
+  height: 30px;
+  width: 0%;
+  border-radius: 15px;
+
+}
+
+.progress-count{
+  padding-block: 5px;
+  padding-inline: 10px;
+  position: fixed;
+  z-index: 1;
+  font-size: 14px;
+  color:#48a300;
+  
+}
+
+.goals-container .error {
+  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ff5151;
+}
+
+.goals-box {
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 1px;
+  display: flex;
+  padding: 27px;
+  border: solid 1px;
+  border-color: #0000001a;
+  border-radius: 17px;
+  margin-bottom: 46px;
+}
+
+.custom-checkbox {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: white;
+  border: solid 2px #61481c4d;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tick-img{
+    display: none;
+}
+
+.goals-box input {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+  width: 100%;
+  margin-left: 22px;
+  border: none;
+  outline: none;
+  
+  
+}
+.goals-box input::placeholder {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  color: #d9d9d9;
+  
+}
+
+.completed .tick-img{
+    display: block;
+}
+.completed .input{
+    color:#48a300;
+    text-decoration: line-through;
+}
+.completed .custom-checkbox{
+    background-color:#48a300;
+    border-color: #48a300;
+}
+
+.goals-container .quote {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+.goals-container .credits {
+  font-weight: 500;
+  font-size: 10px;
+  color: #858585;
+  text-align: center;
+}
+
+.add-button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* min-width: 60px; */
+  background-color: #48a300;
+  color:white;
+  border-radius:6px;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding:6px;
+  padding-inline: 8px;
+  cursor: pointer;
+}
+
+
+
+@media (width<700px){
+  .title {
+    font-size: 36px;
+  }
+
+  .custom-progress,.progress-value{
+    height: 20px;
+  }
+
+  .goals-box {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+/* <!-- HTML !-->
+<button class="button-54" role="button">Button 54</button> */
+
+/* CSS */
+/* .add-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.add-button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+} */
