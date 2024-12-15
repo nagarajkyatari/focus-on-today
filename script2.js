@@ -63,10 +63,10 @@ function checkingBox() {
       rm.addEventListener("click", (el) => {
         console.log(el.target.parentElement);
         el.target.parentElement.remove();
-        // checkBox = [...document.querySelectorAll(".custom-checkbox")];
-        // inputBox = [...document.querySelectorAll(".input")];
-        // goalsBox = [...document.querySelectorAll(".goals-box")];
-        // remove = [...document.querySelectorAll(".remove")];
+        checkBox = [...document.querySelectorAll(".custom-checkbox")];
+        inputBox = [...document.querySelectorAll(".input")];
+        goalsBox = [...document.querySelectorAll(".goals-box")];
+        remove = [...document.querySelectorAll(".remove")];
       });
     });
   });
